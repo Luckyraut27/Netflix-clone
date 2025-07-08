@@ -1,0 +1,140 @@
+.login {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#302f2f7e, #2726267e),url(/background_banner.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+
+.login-logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 150px;
+  z-index: 2;
+}
+
+.login-form {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
+.login-form h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+
+.login-form button {
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #f40612;
+}
+.form-help p:hover{
+   color: red;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 10px;
+}
+
+.remember input {
+  margin-right: 5px;
+}
+
+
+.switch {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.switch span {
+  color: white;
+  margin-left: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switch span:hover {
+  color: #e50914;
+}
+
+
+@media (max-width: 600px) {
+  .login-form {
+    padding: 40px 20px;
+    width: 90%;
+  }
+
+  .login-logo {
+    width: 120px;
+    top: 20px;
+    left: 20px;
+  }
+}
+.login-spinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-spinner img{
+    width: 60px;
+}
